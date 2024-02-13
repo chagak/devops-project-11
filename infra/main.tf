@@ -22,7 +22,7 @@ module "security_group" {
   ec2_sg_name_for_python_api = "SG for EC2 for enabling port 5000"
 }
 
-module "ec2" {
+/*module "ec2" {
   source                   = "./ec2"
   ami_id                   = var.ec2_ami_id
   instance_type            = "t2.micro"
@@ -86,3 +86,4 @@ module "rds_db_instance" {
   mysql_password       = "dbpassword"
   mysql_dbname         = "devprojdb"
 }
+/*
